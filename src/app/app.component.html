@@ -1,0 +1,12 @@
+<body>
+  
+<h1>Calculadora</h1>
+<input title="Numero 1" placeholder="123.." type="number"  [(ngModel)]="n1">
+<hr>
+<input title="Numero 2" placeholder="123.." type="number" [(ngModel)]="n2">
+
+
+<p><button (click)="operation('+')" title="Somar"> + </button > <button (click)="operation('-')" title="Diminuir"> - </button> <button  (click)="operation('/')" title="Dividir">/</button> <button (click)="operation('*')" title="Subtrair">*</button> <button (click)="Limpar()" > C</button>
+
+  <h4 title="Resultado das somas"> Resultado: <span> {{ resultado }}</span></h4> 
+</body>
