@@ -28,6 +28,9 @@ export class AppComponent {
       case '*':
         this.resultado = this.n1 * this.n2;
         break;
+        case '%':
+        this.resultado = (this.n2 / 100) * this.n1;
+        break;
     
     }
   }
