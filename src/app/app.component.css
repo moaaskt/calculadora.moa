@@ -85,5 +85,9 @@ text-transform: uppercase;
 h4 span{
  color:black;
 }
+footer{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
      
 
