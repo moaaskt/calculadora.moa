@@ -7,9 +7,9 @@ import { disableDebugTools } from '@angular/platform-browser';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  n1;
-  n2;
-  resultado;
+  n1:string;
+  n2:string;
+  resultado: number;
   operation(op) {
     if(this.n1 == undefined || this.n2 == undefined){
       alert("Digite um numero")
@@ -17,27 +17,27 @@ export class AppComponent {
     }
     switch (op) {
       case '+':
-        this.resultado = this.n1 + this.n2;
+        this.resultado=parseInt(this.n1) + parseInt(this.n2)
         break;
       case '-':
-        this.resultado = this.n1 - this.n2;
+        this.resultado=parseInt(this.n1) - parseInt(this.n2);
         break;
       case '/':
-        this.resultado = this.n1 / this.n2;
+        this.resultado=parseInt(this.n1) / parseInt(this.n2);
         break;
       case '*':
-        this.resultado = this.n1 * this.n2;
+        this.resultado=parseInt(this.n1) * parseInt(this.n2);
         break;
         case '%':
-          this.resultado = (this.n2 / 100) * this.n1;
+          this.resultado=parseInt(this.n2)/  100 *parseInt(this.n1);
           break;
         
     
     }
   }
 Limpar(){
-    this.n1 = disableDebugTools,
-    this.n2 = disableDebugTools;
+    this.n1 = "";
+    this.n2 = "";
     this.resultado = undefined;
   }
 
