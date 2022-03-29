@@ -17,19 +17,19 @@ export class AppComponent {
     }
     switch (op) {
       case '+':
-        this.resultado=parseInt(this.n1) + parseInt(this.n2)
+        this.resultado=parseFloat(this.n1) + parseFloat(this.n2)
         break;
       case '-':
-        this.resultado=parseInt(this.n1) - parseInt(this.n2);
+        this.resultado=parseFloat(this.n1) - parseFloat(this.n2);
         break;
       case '/':
-        this.resultado=parseInt(this.n1) / parseInt(this.n2);
+        this.resultado=parseFloat(this.n1) / parseFloat(this.n2);
         break;
       case '*':
-        this.resultado=parseInt(this.n1) * parseInt(this.n2);
+        this.resultado=parseFloat(this.n1) * parseFloat(this.n2);
         break;
         case '%':
-          this.resultado=parseInt(this.n2)/  100 *parseInt(this.n1);
+          this.resultado=parseFloat(this.n2)/  100 *parseFloat(this.n1);
           break;
         
     
