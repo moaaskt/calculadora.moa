@@ -3,7 +3,7 @@
 <p align="center">
 <a href="#sobre">Sobre </a>|
 <a href="#sobre">Tecnologias </a>|
-<a href="#sobre">Autor </a>|
+<a href="#sobre">Autor </a>
 </p>
 
 <br>
